@@ -75,7 +75,7 @@ User Story 2 - Competition Show Page
 As a user
 When I visit a competition's show page
 Then I see the competition's name, location, and sport
-And I see the name and hometown of all teams in this competition
+And I see the nickname and hometown of all teams in this competition
 And I see the average age of all players in the competition
 ```
 ```
@@ -97,8 +97,8 @@ Extension - Team Index
 
 As a user
 When I visit the team index
-Then I see the names of all teams
-And next to the team name I see the average age of its players
+Then I see the nicknames of all teams
+And next to the team nickname I see the average age of its players
 And I see that all teams are sorted by this average age from highest to lowest
 
 (Note: you should not make a separate query for each team to calculate the average age)
