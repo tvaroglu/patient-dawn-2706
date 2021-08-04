@@ -1,0 +1,5 @@
+<%= link_to "Competitions Index", "/competitions" %>
+<h1> <%= @competition.name %> </h1>
+
+<h3> <%= "Location: #{@competition.location}" %> </h3>
+<h3> <%= "Sport: #{@competition.sport.to_s.capitalize}" %> </h3>

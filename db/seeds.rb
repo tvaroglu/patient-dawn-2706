@@ -26,3 +26,9 @@ player_6 = team_3.players.create!(name: 'Player 6', age: 23)
 
 # Competitions
 competition_1 = Competition.create!(name: 'PAC12 Championship', location: 'Denver', sport: 'football')
+competition_2 = Competition.create!(name: 'March Madness', location: 'Houston', sport: 'basketball')
+
+#CompetitionTeams
+CompetitionTeam.create!(competition_id: competition_1.id, team_id: team_1.id)
+CompetitionTeam.create!(competition_id: competition_1.id, team_id: team_2.id)
+CompetitionTeam.create!(competition_id: competition_1.id, team_id: team_3.id)
