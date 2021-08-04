@@ -4,6 +4,8 @@ class CreateCompetitions < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :location
       t.string :sport
+
+      t.timestamps
     end
   end
 end
