@@ -3,3 +3,15 @@
 
 <h3> <%= "Location: #{@competition.location}" %> </h3>
 <h3> <%= "Sport: #{@competition.sport.to_s.capitalize}" %> </h3>
+<br>
+
+<h3>All Teams:</h3>
+<% @competition.teams.each do |team| %>
+  <div id="team-<%= team.id %>">
+    <p> <%= "Name: #{team.nickname}" %> </p>
+    <p> <%= "Hometown: #{team.hometown}" %> </p>
+    <br>
+  </div>
+<% end %>
+
+<h3> <%= "Average Player Age: #{@competition.average_player_age}" %> </h3>
