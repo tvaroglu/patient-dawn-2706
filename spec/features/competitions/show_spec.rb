@@ -49,7 +49,7 @@ RSpec.describe 'competitions show' do
 
     visit "/competitions/#{competition.id}"
 
-    expect(page).to have_content("Average Player Age: 20.5")
+    expect(page).to have_content("Average Player Age: #{competition.average_player_age}")
   end
 
 end
